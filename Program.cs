@@ -65,3 +65,16 @@
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
 Console.Clear();
+Console.WriteLine("Insert First Number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+if(num1 % 2 == 0)
+    {
+        Console.WriteLine($"Number {num1} devided without remainder ");
+    }
+
+else
+    {
+        Console.WriteLine($"Number {num1} can't be deviced without remainder ");
+    }
+    
