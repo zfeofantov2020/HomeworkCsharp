@@ -5,7 +5,7 @@
 // 22 3 9 -> 22
 
 Console.Clear();
-Console.WriteLine("Task number 2");
+Console.WriteLine("Task number 4");
 
 Console.WriteLine("Insert First Number");
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -13,17 +13,26 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Insert Second Number");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-if(num1 > num2)
+Console.WriteLine("Insert Third Number");
+
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+int newMax = 0 ;
+
+if((num1 > num2) && (num1 > num3))
     {
-        Console.WriteLine($"First number {num1} greater than Second number {num2}");
+        newMax = num1;
+        Console.WriteLine($"Greatest Number{num1} from all input numbers");
     }
-else if(num1 < num2)
+else if((num2 > num3))
     {
-        Console.WriteLine($"Second nubmer {num2} greater then {num1} ");
+        newMax = num2;
+        Console.WriteLine($"Greatest Number {num2} from all input numbers ");
     }
-else
+else 
     {
-        Console.WriteLine($"First number {num1} equal to Second number {num2}");
+        newMax = num3;
+        Console.WriteLine($" Greatest Number {num3} from all input numbers ");
     }
 
 
